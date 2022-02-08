@@ -33,11 +33,9 @@ public class Wordle
                            "    \u001B[31mRed = wrong letter\n" +
                            "\u001B[0mwhen your guess is ready press enter");
 
-        for(int p = 0; p < attempts; p++)
+        for(int p = 0; p < attempts && !won; p++)
         {   
             interesting = new int[26];
-            if(won)
-                break;
             Scanner sc = new Scanner(System.in);
             guess = sc.nextLine().toCharArray();
             
