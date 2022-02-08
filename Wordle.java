@@ -71,8 +71,13 @@ public class Wordle
                     System.out.print(color[i] + guess[i] + "\u001B[0m");
             System.out.println();
         }
-    System.out.print("the word was ");
-    for(char w : word)
-        System.out.print(w);
+        if(won)
+            System.out.println("wooooo!!!!!");
+        else
+        {
+            System.out.print("the word was ");
+            for(char w : word)
+                System.out.print(w);
+        }
     }
 }
