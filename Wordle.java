@@ -99,7 +99,7 @@ public class Wordle
             System.out.println("wooooo!!!!!");
         else
         {
-            System.out.print("the word was ");
+            System.out.print("Boohoo, the word was ");
             for(char w : word)
                 System.out.print(w);
             System.out.println();
