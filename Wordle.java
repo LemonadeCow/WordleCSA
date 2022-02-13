@@ -39,7 +39,7 @@ public class Wordle
 
     public static void play(int wordLength, int attempts, String[] words)
     {
-        int index = (int) (Math.random()*words.length)
+        int index = (int) (Math.random()*words.length);
         char [] word = words[index].toCharArray();
         //remove the words[index] from the array ???
         int [] interesting = new int[26];
